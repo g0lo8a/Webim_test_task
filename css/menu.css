@@ -1,0 +1,151 @@
+.header__container {
+    display: flex;
+    max-width: 1010px;
+    padding: 40px 24px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__navigation-wrap {
+    margin-left: auto;
+    display: flex;
+}
+
+.header__logo {
+    display: block;
+    margin-right: 25px;
+    width: 140px;
+    height: 40px;
+}
+
+.header__text-wrap {
+    border-left: 1px solid #49657d;
+    padding-left: 25px;
+}
+
+.header__text {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fff;
+}
+
+.header__text-green {
+    font-size: 12px;
+    color: #60e5d7;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.registration {
+    margin-left: 30px;
+}
+
+.menu__items {
+    margin-right: 30px;
+}
+
+.menu__items:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.050em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.main-nav__toggle {
+    display: none;
+}
+
+.registration__button {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 23px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #393e6b;
+    background-color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+}
+
+.registration__button:hover {
+    box-shadow: 0 0 10px rgba(96, 229, 215, 0.5);
+}
+
+@media (max-width: 950px) {
+
+    .container {
+        max-width: 880px;
+    }
+
+    .header__container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header__navigation-wrap {
+        margin-left: 30px;
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .header__text-wrap {
+        order: 3;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #49657d;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .header__text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .menu {
+        display: none;
+    }
+
+    .main-nav__toggle {
+        display: block;
+        width: 13px;
+        height: 11px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .header__container {
+        padding: 20px 24px;
+    }
+
+    .header__logo {
+        width: 75px;
+        height: 30px;
+    }
+}

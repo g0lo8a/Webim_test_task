@@ -1,0 +1,21 @@
+.footer {
+    text-align: center;
+    background-color: #242637;
+    padding: 15px 0;
+}
+
+.footer-text {
+    font-family: 'Ubuntu', sans-serif;
+    color: #7b7fa8;
+    font-size: 14px;
+}
+
+.footer__text-green a {
+    text-decoration: none;
+    color: #22d6e7;
+    display: block;
+}
+
+.footer__text-green a:hover {
+    text-decoration: underline;
+}

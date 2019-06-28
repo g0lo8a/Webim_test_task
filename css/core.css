@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.wrap {
+    max-width: 1050px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+}
+
+.page__bg {
+    background: url("../images/bg_photo.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page__bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(47deg, rgba(40, 43, 68, 0.97) 0%, rgba(61, 68, 128, 0.97) 100%);
+}
+
+.page__bg--wrap {
+    position: relative;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-height: 900px) {
+
+    .page__bg--wrap {
+        height: 100%;
+    }
+}
+
+@media (min-height: 1000px) {
+
+    .page__bg--wrap {
+        height: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .page__bg--wrap {
+        height: 100%;
+    }
+
+    .wrap {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}

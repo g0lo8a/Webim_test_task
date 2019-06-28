@@ -1,0 +1,92 @@
+.about-us {
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__img {
+    flex-basis: 50%;
+}
+
+.about-us__img img {
+    display: block;
+    width: 100%;
+}
+
+.about-us__text-wrap {
+    flex-basis: 48%;
+    align-self: center;
+}
+
+.about-us__text {
+    font-size: 34px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    line-height: 42px;
+    margin-bottom: 65px;
+    color: #ffffff;
+}
+
+.about-us__button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0facbb;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+}
+
+.about-us__button:hover {
+    box-shadow: 0 0 10px rgba(96, 229, 215, 0.5);
+}
+
+@media (max-width: 1000px) {
+
+    .about-us {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    .about-us__button {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .about-us__text {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 45px;
+    }
+
+    .about-us {
+        flex-flow: column-reverse;
+    }
+
+    .about-us {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .about-us__img {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .about-us__text-wrap {
+        flex-basis: 50%;
+    }
+
+    .about-us__button {
+        padding: 15px 40px;
+    }
+}

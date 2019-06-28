@@ -1,0 +1,86 @@
+.advantage {
+    max-width: 1010px;
+    margin: 115px auto;
+}
+
+.advantage__title {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 42px;
+    font-size: 34px;
+    font-weight: 300;
+    color: #393e6b;
+    max-width: 545px;
+    margin: 0 auto 95px;
+    text-align: center;
+}
+
+.advantage__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantage__list li {
+    flex-basis: 25%;
+    margin-bottom: 50px;
+}
+
+.advantage__item {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #393e6b;
+    text-align: left;
+}
+
+.box {
+    display: flex;
+    align-items: baseline;
+}
+
+i {
+    font-size: 48px;
+    font-style: normal;
+    color: rgba(6, 149, 144, 0.2);
+    padding-right: 10px;
+}
+
+@media (max-width: 760px) {
+
+    .advantage__title {
+        font-size: 24px;
+        line-height: normal;
+        margin: 40px auto 40px;
+    }
+
+    .advantage__list li {
+        flex-basis: 50%;
+    }
+    .in {
+        display: inline;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .advantage__title {
+        margin: 40px auto 20px;
+    }
+
+    .advantage__list li {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .in {
+        display: inline;
+    }
+
+    .bl {
+        display: block;
+    }
+
+    .in-bl {
+        display: inline-block;
+    }
+}
